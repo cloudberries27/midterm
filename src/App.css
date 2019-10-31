@@ -20,3 +20,65 @@
 .App-link {
   color: #09d3ac;
 }
+
+/* 168402 */
+html{
+  background-color: black;
+}
+
+.showbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em 3em;
+  animation: fadeOutAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.button{
+  padding:50px;
+}
+.button_a {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+border: 2px solid white;
+padding: 20px;
+border-radius: 5px;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+.button_a:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+@keyframes fadeOutAnimation {
+  0% { opacity: 1;}
+  100% { opacity: 0;}
+}
+
+@keyframes fadeInAnimation {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
